@@ -10,7 +10,7 @@ box-sizing: border-box;
 
 /* INDEX */
 body {
-    background-color: whitesmoke;
+    background-color: #fafafa;
 }
 
 header {
@@ -344,12 +344,6 @@ footer div a img{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
-@media (min-width: 480px){
-    .about-content img{
-        width: 50px;
-    }
-}
-
 .about-awards{
     display: flow-root;
     background-color: #fff;
@@ -418,4 +412,129 @@ footer div a img{
 
 .libros img:hover{
     box-shadow: 0 10px 20px #000000
+}
+
+/* RESENAS */
+.section-resena{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+
+.formulario{
+    justify-items: center;
+}
+
+.formulario label{
+    display: flex;
+    padding: 8px;
+    width: 50%;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #cccccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #FFD700;
+}
+
+button {
+    padding: 10px;
+    background-color: #81BEDB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #48A1D9;
+}
+
+.iframe-container {
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contacto */
+.contacto {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contacto h2 {
+    text-align: center;
+    color: #333333;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contacto label {
+    font-weight: bold;
+    color: #555555;
+}
+.contacto input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.contacto input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+.contacto button {
+    padding: 10px 20px;
+    background-color: #48A1D9;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contacto button:hover {
+    background-color: #82C0D9;
+    box-shadow: 0 4px 15px #555555(0, 0, 0, 0.3);
 }

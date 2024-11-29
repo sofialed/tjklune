@@ -17,21 +17,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/libros.html">Libros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/sobre.html">Sobre el Autor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/reseñas.html">Reseñas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./libros.html">Libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre el Autor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reseñas.html">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -42,62 +42,35 @@
         </nav>
     </header>
     <main>
-        <div class="formulario">
-            <h2>Tu Reseña</h2>
-            <form action="/procesar-opcion" method="post">
-                <label for="opcion-select">Libros TJ Klune</label><br>
-                <select id="opcion-select" name="opcion" required>
-                    <option value="" disabled selected>--Libros--</option>
-                    <option value="opcion1">Dos Hombres y Un niño (2011)</option>
-                    <option value="opcion2">Who We Are (2012)</option>
-                    <option value="opcion3">The Art of Breathing (2014)</option>
-                    <option value="opcion1">The Long and Winding Road (2017)</option>
-                    <option value="opcion2">Burn (2012)</option>
-                    <option value="opcion3">Tell Me It's Real (2013)</option>
-                    <option value="opcion1">The Queen & the Homo Jock King (2016)</option>
-                    <option value="opcion2">Until You(2017)</option>
-                    <option value="opcion3">Why We Fight(2019)</option>
-                    <option value="opcion1">The Lightning-Struck Heart (2015)</option>
-                    <option value="opcion2">A Destiny of Dragons (2017)</option>
-                    <option value="opcion3">The Consumption of Magic (2017)</option>
-                    <option value="opcion1">A Wish Upon the Stars (2018)</option>
-                    <option value="opcion2">Fairytales From Verania (2021)</option>
-                    <option value="opcion3">The Damning Stone (2022)</option>
-                    <option value="opcion1">How To Be a Normal Person (2015)</option>
-                    <option value="opcion2">How To Be a Movie Star (2019)</option>
-                    <option value="opcion3">Wolfsong (2016)</option>
-                    <option value="opcion1">Ravensong (2018)</option>
-                    <option value="opcion2">Heartsong (2019)</option>
-                    <option value="opcion3">Brothersong (2020)</option>
-                    <option value="opcion1">Whiteres Sere (2016)</option>
-                    <option value="opcion2">Crisped Sere (2026)</option>
-                    <option value="opcion3">The Extraordinaries (2019)</option>
-                    <option value="opcion1">Flash Fire (2021)</option>
-                    <option value="opcion2">Heat Wave (2022)</option>
-                    <option value="opcion3">Into This River I Drown (2013)</option>
-                    <option value="opcion1">John & Jackie (2014)</option>
-                    <option value="opcion2">Murmuration (2016)</option>
-                    <option value="opcion3">Olive Juice (2017)</option>
-                    <option value="opcion1">The Bones Beneath My Skin (2018)</option>
-                    <option value="opcion2">The House in the Cerulean Sea (2019)</option>
-                    <option value="opcion3">Somewhere Beyond the Sea (2024)</option>
-                    <option value="opcion3">Under the Whispering Door (2021)</option>
-                    <option value="opcion1">In The Lives of Puppets (2023)</option>
-                    <option value="opcion2">The Bones Beneath My Skin (2024)</option>
-                </select><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-                <form action="/enviar-reseña" method="post">
-                    <label for="nombre">Tu Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-    
-                    <label for="reseña">Escribe tu reseña:</label><br>
-                    <textarea id="reseña" name="reseña" rows="5" cols="40" required></textarea><br><br>
-    
-                    <input type="submit" value="Enviar Reseña">
+        <section class="section-resena">
+            <div class="formulario">
+                <h2>Dejar una Reseña</h2>
+                <form action="/enviar" method="post">
+                    <label for="title">Título del libro:</label>
+                    <input type="text" id="title" name="title" placeholder="Escribe el título del libro" required>
+                    <label for="name">Tu nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                    <label>Calificación:</label>
+                    <div class="rating">
+                        <div class="stars">
+                            <input type="radio" id="star1" name="rating" value="5">
+                            <label for="star1">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="4">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="2">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star5" name="rating" value="1">
+                            <label for="star5">&#9733;</label>
+                        </div>
+                    </div>
+                    <label for="review">Tu reseña:</label>
+                    <textarea id="review" name="review" rows="5" placeholder="Escribe tu reseña aquí..." required></textarea>
+                    <button type="submit">Enviar Reseña</button>
                 </form>
             </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-overlay">
