@@ -1,0 +1,85 @@
+/* LIBROS */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* Título de sección ocupa todo el ancho */
+.title-section {
+    grid-column: 1 / -1;
+    padding-top: 1rem;
+}
+
+.title-section h2 {
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: #101E11;
+    letter-spacing: 2px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+/* Cards con proporción de libro real (2:3) */
+.books-container .book-flip {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    height: auto;
+    perspective: 1000px;
+}
+
+.books-container .book-front img {
+    border-radius: 3px;
+}
+
+/* Link del título sin subrayado */
+.books-container .book-back h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Texto del dorso adaptado al tamaño de la card */
+.books-container .book-back {
+    padding: 20px 16px;
+    gap: 60px;
+}
+
+.books-container .book-back p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 1550px) {
+    .books-container {
+        grid-template-columns: repeat(3, 350px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .books-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .books-container .book-back {
+        justify-content: flex-start;
+        padding: 12px;
+        gap: 0;
+    }
+
+    .books-container .book-back p {
+        display: none;
+    }
+
+    .books-container .book-back h2 {
+        font-size: 1rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,143 @@
+/* Header */
+
+header {
+    position: relative;
+    background-color: #FFFfff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+    width: 120px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+/* Navbar */
+
+.navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #101E11;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.nav-link:hover {
+    color: #03738C;
+}
+
+.nav-link.active {
+    text-decoration: underline wavy;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+/* Hamburger */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+}
+
+/* Social icons */
+
+.social-icon-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon-header a {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .navbar {
+        display: none;
+        position: static;
+        transform: none;
+        order: 3;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 10px 15px;
+    }
+
+    .nav-link:hover {
+        color: #03738C;
+    }
+
+    .menu-toggle:checked~.navbar {
+        display: block;
+    }
+
+    .social-icon-header {
+        display: none;
+    }
+}

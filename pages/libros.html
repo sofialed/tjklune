@@ -1,234 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>TJ KLUNE</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/books.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Fonts titulos (Limelight) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <!-- Fonts texto (Oswald) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>TJ KLUNE | Autor</title>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" class="logo" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./libros.html">Libros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./sobre.html">Sobre el Autor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reseñas.html">Reseñas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-light" type="submit">Buscar</button>
-                </form>
-            </div>
-            </div>
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" class="logo" alt="Logo"></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link active" href="./libros.html">Libros</a></li>
+                <li><a class="nav-link" href="./sobre.html">Sobre el Autor</a></li>
+                <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
+        <section class="social-icon-header">
+            <a href="https://www.goodreads.com/author/show/5073330.T_J_Klune?ref=ru_lihp_up_rs_6_mclk-up3098240307"
+                target="_blank">
+                <img src="../img/goodreads.png" alt="Goodreads" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/tjklunebooks/" target="_blank">
+                <img src="../img/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+        </section>
+    </header>
+
     <main>
-        <div class="libros">
-            <div>
-                <a href="https://www.tjklunebooks.com/the-bones-beneath-my-skin" target="_blank">
-                    <img src="../img/portada-proximo-libro.jpg" alt="the-bones-beneath-my-skin">
-                </a>
+        <div class="books-container">
+
+            <div class="title-section">
+                <h2>Standalone Novels</h2>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/in-the-lives-of-puppets" target="_blank">
-                    <img src="../img/bookcover-puppets.jpg" alt="in-the-lives-of-puppets">
-                </a>
+
+            <div class="book-1 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thestars.jpg" alt="the-stars-look-like-home">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-stars-look-like-home" target="_blank">The Stars Look Like Home</a></h2>
+                        <p>From beloved #1 New York Times bestselling author TJ Klune comes a heartwarming story about a good boy in search of a great life. The Stars Look Like Home is a funny and moving adventure about finding one’s place in the universe from the perspective of a dog.
+                        <br>A promise: The dog does not die in this.
+                        <br><strong>Coming 1.12.27</strong></p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/under-the-whispering-door" target="_blank">
-                    <img src="../img/coverbook-under.jpg" alt="under-the-whispering-door">
-                </a>
+            <div class="book-2 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-murmuration.jpg" alt="murmuration">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/murmuration" target="_blank">Murmuration</a></h2>
+                        <p>In 1954, Mike lives an apparently perfect life in the idyllic town of Amorea, where he works at a bookstore and begins a promising romance with Sean. But beneath the town’s charm lie unsettling mysteries: forgotten residents, no children, and secrets surrounding those who leave. As Mike’s sense of identity unravels and dark memories resurface, he must uncover the truth about Amorea to protect Sean from the looming danger.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/olive-juice" target="_blank">
-                    <img src="../img/bookcover-olive.jpg" alt="olive-juice">
-                </a>
+            <div class="book-3 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-weburned.jpg" alt="we-burned-so-bright">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/under-the-whispering-door" target="_blank">We Burned So Bright</a></h2>
+                        <p>In this emotional standalone novel, longtime husbands Don and Rodney embark on a final cross-country journey as Earth faces destruction from an approaching black hole. With only a month left, they travel from Maine to Washington State to settle unfinished business while reflecting on forty years of love, loss, and shared life. Along the way, they encounter humanity in its final moments—fear, denial, joy, and connection—forcing them to confront whether a life well-lived is enough when everything is about to end.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/murmuration" target="_blank">
-                    <img src="../img/bookcover-murmuration.jpg" alt="murmuration">
-                </a>
+            <div class="book-4 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thebones.jpg" alt="the-bones-beneath-my-skin">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/olive-juice" target="_blank">The Bones Beneath my Skin</a></h2>
+                        <p>After losing everything, Nate Cartwright retreats to his family’s remote cabin in Oregon, only to discover it occupied by a mysterious man named Alex and an extraordinary young girl called Artemis Darth Vader. As Nate becomes entangled in their lives, he learns Artemis possesses dangerous secrets that have drawn the attention of cultists and government forces alike. Faced with powerful enemies and his own grief, Nate must choose between remaining trapped in his past or risking everything to protect a child who could change the future.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/john-jackie" target="_blank">
-                    <img src="../img/bookcover-john.jpg" alt="john-jackie">
-                </a>
+            <div class="book-5 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-inthelives.jpg" alt="in-the-lives-of-puppets">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/murmuration" target="_blank">In the Lives of Puppets</a></h2>
+                        <p>In a hidden treehouse, human Victor Lawson lives with his unconventional robotic family, including inventor android Giovanni and other quirky machines. But when Victor repairs a mysterious android named Hap, dangerous secrets from Giovanni’s violent past resurface, putting their peaceful life at risk. As Giovanni is captured, Victor and his found family embark on a perilous journey to rescue him, forcing Victor to confront love, loyalty, and whether true connection can survive betrayal.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/into-this-river-i-drown" target="_blank">
-                    <img src="../img/bookcover-river.jpg" alt="into-this-river-i-drown">
-                </a>
+            <div class="book-6 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-under.jpg" alt="under-the-whispering-door">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/john-jackie" target="_blank">Under the Whispering Door</a>
+                        </h2>
+                        <p>After his death, Wallace Price is taken not to the afterlife, but to a mysterious tea shop run by Hugo, a ferryman who helps souls move on. Reluctant to leave behind the life he never truly appreciated, Wallace begins an unexpected journey of self-discovery, love, and redemption. With only one week to prepare for crossing over, Wallace must finally learn what it means to truly live.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-house-in-the-cerulean-sea" target="_blank">
-                    <img src="../img/bookcover-house.jpg" alt="the-house-in-the-cerulean-sea">
-                </a>
+            <div class="book-7 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-olive.jpg" alt="olive-juice">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/olive-juice" target="_blank">Olive Juice</a></h2>
+                        <p>It begins with a message that David cannot ignore:
+                        <br>I want to see you.
+                        <br>He agrees, and on a cold winter’s night, David and Phillip will come together to sift through the wreckage of the memory of a life no longer lived.
+                        <br>David is burdened, carrying with him the heavy guilt of the past six years upon his shoulders.
+                        <br>Phillip offers redemption.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/somewhere-beyond-the-sea" target="_blank">
-                    <img src="../img/bookcover-somewhere.jpg" alt="somewhere-beyond-the-sea">
-                </a>
+            <div class="book-8 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-jhon.jpg" alt="john-&-jackie">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/john-jackie" target="_blank">John & Jackie</a></h2>
+                        <p>After seventy-one years together, John and Jackie reflect on the defining moments of their lifelong love—from childhood friendship and first romance to hardship, pain, and resilience. Over the course of one final afternoon, they revisit the experiences that shaped their bond as John prepares to give Jackie a profound final gift, proving that their devotion has remained unshakable through every stage of life.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/wolfsong" target="_blank">
-                    <img src="../img/bookcover-wolfsong.jpg" alt="wolfsong">
-                </a>
+            <div class="book-9 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-intothis.jpg" alt="into-this-river-i-drown">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/into-this-river-i-drown" target="_blank">Into This River I Drown</a></h2>
+                        <p>Still grieving his father’s mysterious death, Benji Green struggles to keep his family’s convenience store running in the strange town of Roseland, Oregon. As unsettling visions and supernatural events intensify, Benji discovers that his father’s death may be tied to far greater mysteries involving hidden truths, dangerous forces, and a mysterious winged man named Calliel. Drawn into a world beyond his understanding, Benji must confront grief, love, and the extraordinary secrets surrounding his life.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/ravensong" target="_blank">
-                    <img src="../img/bookcover-ravensong.webp" alt="ravensong">
-                </a>
+
+            <div class="title-section">
+                <h2>Cerulean Chronicles</h2>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/heartsong" target="_blank">
-                    <img src="../img/bookcover-heartsong.jpeg" alt="heartsong">
-                </a>
+
+            <div class="book-10 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thehouse.jpg" alt="the-house-in-the-cerulean-sea">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-house-in-the-cerulean-sea" target="_blank">The House in the Cerulean Sea</a></h2>
+                        <p>Linus Baker, a strict caseworker overseeing magical children, is sent to investigate a remote orphanage housing six extraordinary and potentially dangerous children. There, he meets the enigmatic caretaker Arthur Parnassus and discovers a world that challenges everything he believes about duty, fear, and family. As Linus grows closer to the children and Arthur, he must decide whether to follow the rules or protect the found family that changes his life forever.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/brothersong" target="_blank">
-                    <img src="../img/bookcover-brothersong.jpeg" alt="brothersong">
-                </a>
+            <div class="book-11 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-somewhere.jpg" alt="somewhere-beyond-the-sea">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/somewhere-beyond-the-sea" target="_blank">Somewhere beyond the sea</a></h2>
+                        <p>Arthur Parnassus has built a loving home for magical children on Marsyas Island, determined to give them the safety and family he never had. But when his troubled past resurfaces and he is called to defend himself publicly, Arthur must fight not only for his family’s future but for the rights of all magical people. As new challenges and a powerful child test their bonds, Arthur and his loved ones must prove that love, resilience, and found family can withstand even the darkest truths.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-extraordinaries" target="_blank">
-                    <img src="../img/bookcover-extra.jpg" alt="the-extraordinaries">
-                </a>
+
+            <div class="title-section">
+                <h2>Greencreek Series</h2>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/flash-fire" target="_blank">
-                    <img src="../img/bookcover-flash.jpg" alt="flash-fire">
-                </a>
+
+            <div class="book-12 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-wolfsong.jpg" alt="wolfsong">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/wolfsong" target="_blank">Wolfsong</a></h2>
+                        <p>Abandoned and underestimated for much of his life, Ox’s world changes when he meets Joe, a mysterious boy from a remarkable family with extraordinary secrets. As Ox becomes entwined with a powerful world of wolves, loyalty, and destiny, deep bonds and devastating loss shape his journey into adulthood. When Joe returns after years apart, Ox must confront the love, pain, and connection that have always bound them together.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/heat-wave" target="_blank">
-                    <img src="../img/bookcover-heat.jpg" alt="heat-wave">
-                </a>
+            <div class="book-13 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-ravensong.jpg" alt="ravensong">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/ravensong" target="_blank">Ravensong</a></h2>
+                        <p>After years of betrayal and distance from the Bennett wolf pack, Gordo Livingstone is reluctantly drawn back into their world—and back to Mark Bennett, whose bond with him remains impossible to ignore. As new dangers emerge from within the pack itself, Gordo must confront painful wounds, powerful magic, and the fragile ties of love and loyalty. With darkness rising once more, he faces the possibility that even the strongest bonds may not survive.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-lightning-struck-heart" target="_blank">
-                    <img src="../img/bookcover-lightning.jpg" alt="the-lightning-struck-heart">
-                </a>
+            <div class="book-14 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-heartsong.jpg" alt="heartsong">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="http://tjklunebooks.com/heartsong" target="_blank">Heartsong</a></h2>
+                        <p>After years of searching for belonging, Robbie Fontaine finally finds purpose within the powerful wolf stronghold of Caswell, Maine. But when secrets, political unrest, and forbidden connections challenge everything he believes, Robbie is forced to question his loyalties—especially when his fate becomes entwined with Kelly Bennett, a wolf accused of betrayal. As hidden truths emerge, Robbie must navigate love, identity, and the devastating consequences of uncovering the truth.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/a-destiny-of-dragons" target="_blank">
-                    <img src="../img/bookcover-dragons.jpg" alt="a-destiny-of-dragons">
-                </a>
+            <div class="book-15 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-brothersong.jpg" alt="brothersong">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/brothersong" target="_blank">Brothersong</a></h2>
+                        <p>After devastating revelations in Caswell, Carter Bennett sets out alone in search of Gavin, a feral wolf tied to long-buried secrets about his family and pack. As isolation threatens Carter’s sanity, his journey uncovers hidden truths that could reshape the future of all wolves. Confronting the legacy of past betrayals, Carter must face the heavy burden of his family’s sins and decide what kind of future he will help create.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-consumption-of-magic" target="_blank">
-                    <img src="../img/bookcover-magic.jpg" alt="the-consumption-of-magic">
-                </a>
+
+            <div class="title-section">
+                <h2>The Extraordinaries</h2>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/a-wish-upon-the-stars" target="_blank">
-                    <img src="../img/bookcover-stars.jpg" alt="a-wish-upon-the-stars">
-                </a>
+
+            <div class="book-16 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-theextra.jpg" alt="the-extraordinaries">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-extraordinaries" target="_blank">The Extraordinaries</a></h2>
+                        <p>Nick Bell may not have superpowers, but his passion for superheroes, fanfiction, and his larger-than-life imagination make him determined to become extraordinary. After meeting his hero and crush, Shadow Star, Nick embarks on a chaotic journey of self-discovery, friendship, and first love—alongside his best friend Seth. This queer coming-of-age adventure blends humor, heart, and heroics as Nick learns what it truly means to be extraordinary.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-damning-stone" target="_blank">
-                    <img src="../img/bookcover-dammning.jpg" alt="the-damning-stone">
-                </a>
+            <div class="book-17 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-flashfire.jpg" alt="flash-fire">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/flash-fire" target="_blank">Flash Fire</a></h2>
+                        <p>Nick is finally dating the superhero of his dreams, but life with a real-life hero proves more complicated than fantasy. As powerful new heroes and villains emerge in Nova City, Nick and his friends must uncover hidden truths, navigate dangerous secrets, and question everything they thought they knew about justice and family. Amid romance, chaos, and humor, Nick continues his journey to understand what being truly extraordinary means.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/fairytales-from-verania" target="_blank">
-                    <img src="../img/bookcover-verania.jpg" alt="fairytales-from-verania">
-                </a>
+            <div class="book-18 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-heatwave.jpg" alt="heat-wave">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/heat-wave" target="_blank">Heat Wave</a></h2>
+                        <p>In the thrilling conclusion to the Extraordinaries trilogy, Nick and his friends face their biggest challenges yet as unexpected heroes, dangerous revelations, and personal upheavals shake Nova City. With family secrets, friendship, love, and heroism all on the line, Nick must fully embrace who he is and what it truly means to be extraordinary in order to protect the people he loves.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/bear-otter-and-the-kid" target="_blank">
-                    <img src="../img/bookcover-bear.jpg" alt="bear-otter-and-the-kid">
-                </a>
+
+            <div class="title-section">
+                <h2>Tales from verania SERIES</h2>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/who-we-are" target="_blank">
-                    <img src="../img/bookcover-who.jpg" alt="who-we-are">
-                </a>
+
+            <div class="book-19 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thelightning.jpg" alt="the-lightning-struck-heart">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-lightning-struck-heart" target="_blank">The Lightning Struck Heart</a></h2>
+                        <p>Sam Haversford’s life changes forever when his accidental magic leads him from the slums to becoming the apprentice of the king’s wizard. Alongside an unforgettable found family—including a gay unicorn, a half-giant, and a lovable dragon—Sam embarks on a chaotic magical adventure filled with danger, humor, and heartbreak. As he struggles with immense power and unrequited love for the noble Ryan Foxheart, Sam discovers that destiny, love, and heroism may hold far more for him than he ever imagined.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-art-of-breathing" target="_blank">
-                    <img src="../img/bookcover-art.jpg" alt="the-art-of-breathing">
-                </a>
+            <div class="book-20 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-adestiny.jpg" alt="a-destiny-of-dragons">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/a-destiny-of-dragons" target="_blank">A Destiny of Dragons</a></h2>
+                        <p>A year after finding his happily ever after with Ryan Foxheart, Sam of Wilds is once again thrown into chaos when a dark prophecy reveals a looming threat that could destroy the world. Tasked with gathering the five dragons of Verania, Sam must confront destiny, powerful new challenges, and unsettling revelations about love and fate—including the arrival of someone who may threaten everything Sam thought he knew about his future.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-long-and-winding-road" target="_blank">
-                    <img src="../img/bookcover-road.jpg" alt="the-long-and-winding-road">
-                </a>
+            <div class="book-21 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-theconsumption.jpg" alt="the-consumption-of-magic">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-consumption-of-magic" target="_blank">The Consumption of Magic</a></h2>
+                        <p>After surviving a devastating battle with the dark wizard Myrin, Sam of Wilds discovers his scars carry dangerous significance tied to Myrin’s true plans. Joined by his loyal found family, Sam embarks on a perilous quest to unite the remaining dragons and uncover long-buried secrets that could change Verania forever. As destiny closes in, Sam must face his greatest reckoning yet to protect the world he loves.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/tell-me-its-real" target="_blank">
-                    <img src="../img/bookcover-real.jpg" alt="tell-me-its-real">
-                </a>
+            <div class="book-22 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-awish.jpg" alt="a-wish-upon-the-stars">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/a-wish-upon-the-stars" target="_blank">A Wish Upon the Stars</a></h2>
+                        <p>After disappearing into the Dark Woods, Sam of Wilds returns to find Verania conquered, his king imprisoned, and the dark wizard Myrin ruling from the throne. As a resistance rises in Sam’s name, led by the friends he left behind, Sam must confront the consequences of his past choices and reclaim both his power and his kingdom. In this final battle for freedom, love, and redemption, Sam faces his greatest challenge yet.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/the-queen-and-the-homo-jock-king" target="_blank">
-                    <img src="../img/bookcover-queen.jpg" alt="the-queen-and-the-homo-jock-king">
-                </a>
+            <div class="book-23 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thedamning.jpg" alt="the-damning-stone">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-damning-stone" target="_blank">The Damning Stone</a></h2>
+                        <p>A year after Verania’s salvation, Prince Justin faces a new battle when an arranged political marriage threatens his future. Determined to resist both royal duty and an infuriatingly persistent foreign king, Justin navigates court intrigue, personal growth, and unexpected vulnerability. As friendships shift and new challenges arise, Justin must decide whether to keep his heart guarded—or risk everything for love.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/until-you" target="_blank">
-                    <img src="../img/bookcover-until.jpg" alt="until-you">
-                </a>
+            <div class="book-24 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-fairytales.jpg" alt="fairytales-from-verania">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/fairytales-from-verania" target="_blank">Fairytales from Verania</a></h2>
+                        <p>This enchanting collection returns readers to Verania through a series of whimsical, humorous, and heartfelt tales featuring beloved characters in imaginative fairy-tale-inspired adventures. From Gary’s dramatic quest for rescue to magical mischief, romance, and the poignant legend of David and his dragon, these stories blend comedy, fantasy, and emotional depth while expanding the rich world of Verania.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/why-we-fight" target="_blank">
-                    <img src="../img/bookcover-fight.jpg" alt="why-we-fight">
-                </a>
+
+            <div class="title-section">
+                <h2>SEAFARE SERIES</h2>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/how-to-be-a-normal-person" target="_blank">
-                    <img src="../img/bookcover-normal.jpg" alt="how-to-be-a-normal-person">
-                </a>
+
+            <div class="book-25 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-bear.jpg" alt="bear-otter-and-the-kid">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/bear-otter-and-the-kid" target="_blank">Bear Otter and the Kid</a></h2>
+                        <p>After being abandoned by their mother, Bear McKenna dedicates his life to raising his younger brother, Tyson, putting his own needs aside. But when Otter—his best friend’s older brother and a constant presence from his past—returns, Bear is forced to confront deep emotions, new possibilities, and the chance for a life beyond survival. As love and family intertwine, Bear must decide whether he can open himself to something more.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/how-to-be-a-movie-star" target="_blank">
-                    <img src="../img/bookcover-movie.jpg" alt="how-to-be-a-movie-star">
-                </a>
+            <div class="book-26 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-whowe.jpg" alt="who-we-are">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/who-we-are" target="_blank">Who We Are</a></h2>
+                        <p>As Bear, Otter, and Tyson begin building a life together, they quickly learn that love doesn’t erase life’s challenges. Facing custody battles, family conflicts, painful truths from the past, and the ongoing struggle to heal, Bear must redefine what family truly means. Through heartbreak, humor, and resilience, they discover that family is shaped not by blood, but by the people who choose to stay.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/withered-sere" target="_blank">
-                    <img src="../img/bookcover-withered.jpg" alt="withered-sere">
-                </a>
+            <div class="book-27 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-theart.jpg" alt="the-art-of-breathing">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-art-of-breathing" target="_blank">The Art of Breathing</a></h2>
+                        <p>After years of struggle, addiction, and disappointment, Tyson returns home to Seafare seeking healing and a fresh start. Reunited with family and confronted by his first love, Dominic, Tyson must face unresolved pain, buried secrets, and the lingering wounds of his past. As he rebuilds his life, Tyson embarks on a deeply personal journey toward recovery, self-acceptance, and hope for the future.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://www.tjklunebooks.com/crisped-sere" target="_blank">
-                    <img src="../img/bookcover-crisped.jpeg" alt="crisped-sere">
-                </a>
+            <div class="book-28 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thelong.jpg" alt="the-long-and-winding-road">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-long-and-winding-road" target="_blank">The Long and Winding Road</a></h2>
+                        <p>In the powerful conclusion to Bear, Otter, and the Kid’s story, Bear and Otter face life-changing challenges that test the strength of their love, family, and resilience. As unexpected new responsibilities, emotional revelations, and long-awaited homecomings reshape their world, they must embrace the future they’ve fought for while honoring the bonds that made them whole.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-section">
+                <h2>AT FIRST SIGHT SERIES</h2>
+            </div>
+
+            <div class="book-29 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-tellme.jpg" alt="tell-me-its-real">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/tell-me-its-real" target="_blank">Tell Me Its Real</a></h2>
+                        <p>Paul Auster is cynical, insecure, and stuck in a life he never imagined, until the relentlessly charming Vince Taylor crashes into his world. Despite Paul’s disbelief that someone like Vince could truly want him, an unexpected romance begins to challenge his fears and self-doubt. As love deepens through humor, heartbreak, and personal growth, Paul must learn to accept both Vince’s devotion and his own worth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-30 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-thequeen.jpg" alt="the-queen-and-the-homo-jock-king">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/the-queen-and-the-homo-jock-king" target="_blank">The Queen and The Homo Jock King</a></h2>
+                        <p>Sanford Stewart, better known as drag queen Helena Handbasket, has no patience for the infuriatingly chaotic Darren Mayne. But when the future of his beloved club depends on winning over Darren—and through him, the mayor—Sandy reluctantly agrees to a risky plan of seduction. As sparks fly and old assumptions unravel, Sandy discovers that love, vulnerability, and trust may be far more complicated than he ever expected.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-31 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-until.jpg" alt="until-you">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/until-you" target="_blank">Until You</a></h2>
+                        <p>Paul Auster and Vince Taylor just want to have a simple wedding. <br>Really, is that too much to ask? <br>As the big day approaches, they struggle to keep everything from spiraling out of control. <br>From meddling friends and intrusive family, to a certain drag queen's idea as to what constitutes a normal bachelor party, Paul and Vince have their work cut out for them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-32 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-whywe.jpg" alt="why-we-fight">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/why-we-fight" target="_blank">Why We Fight</a></h2>
+                        <p>Corey Ellis is focused on surviving his final summer before graduation—not falling for his former professor, Jeremy Olsen. But when Jeremy becomes his new boss at an LGBTQ+ youth center, Corey must navigate growing attraction, personal identity, and the chaos of unexpected romance. With the help—and interference—of friends, Corey embarks on a journey of self-discovery, courage, and embracing who he truly is.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-section">
+                <h2>How to be series</h2>
+            </div>
+
+            <div class="book-33 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-howto-person.jpg" alt="how-to-be-a-normal-person">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/how-to-be-a-normal-person" target="_blank">How to be a Normal Person</a></h2>
+                        <p>Gustavo Tiberius has always embraced his wonderfully unconventional life, preferring solitude and routine over change. But when Casey, an endearing and persistent new presence, enters his world, Gus begins to question whether he might want more than simply being left alone. As love pushes him beyond his comfort zone, Gus embarks on a heartfelt and humorous journey of self-acceptance, vulnerability, and discovering that normal was never the goal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-34 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-howto-star.jpg" alt="how-to-be-a-movie-star">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/how-to-be-a-movie-star" target="_blank">How to be a Movie Star</a></h2>
+                        <p>Aspiring actor Josiah Erickson is determined to make it in Hollywood, even if his career so far has been less than glamorous. When an unexpected opportunity arises through the mysterious writer-director Q-Bert, Josy embarks on a journey that could change both his professional and personal life. As ambition, friendship, and romance intertwine, Josy discovers that the dreams worth chasing may be bigger—and more heartfelt—than fame alone.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-section">
+                <h2>THE IMMEMORIAL YEAR DUO</h2>
+            </div>
+
+            <div class="book-35 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-withered.jpg" alt="withered-sere">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/withered-sere" target="_blank">Withered + Sere</a></h2>
+                        <p>A century after humanity destroyed itself, Cavalo survives alone in the ruins of a post-apocalyptic world, haunted by his past and accompanied only by a dog and an unstable robot. When a dangerous encounter with a silent captive forces him beyond isolation, Cavalo must confront old traumas, brutal truths, and the possibility of redemption. In a shattered world defined by violence and loss, he discovers that hope may still endure among the ruins.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-36 book-flip">
+                <div class="book-flip-inner">
+                    <div class="book-front">
+                        <img src="../img/bookcover/bookcover-crisped.jpg" alt="crisped-sere">
+                    </div>
+                    <div class="book-back">
+                        <h2><a href="https://www.tjklunebooks.com/crisped-sere" target="_blank">Crisped + Sere</a></h2>
+                        <p>With only twenty-one days to save Cottonwood from destruction, Cavalo is thrust into a desperate battle against brutal enemies while protecting Lucas, a mysterious man whose hidden secrets could reshape the future. As war approaches, Cavalo must confront his fractured sanity, growing emotional ties, and the possibility that Lucas may hold the key to something far greater than survival in their broken world.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer-overlay">
             <div class="footer-content">
-                <h3>¡Gracias por la visita!</h3>
+                <h5>¡Gracias por la visita!</h5>
                 <div class="social-links">
-                <a href="https://www.instagram.com/tjklunebooks/">
-                    <img src="../img/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.goodreads.com/author/show/5073330.T_J_Klune?ref=ru_lihp_up_rs_6_mclk-up3098240307">
-                    <img src="../img/goodreads.png" alt="Goodreads">
-                </a>
+                    <a href="https://www.instagram.com/tjklunebooks/">
+                        <img src="../img/instagram.png" alt="Instagram">
+                    </a>
+                    <a
+                        href="https://www.goodreads.com/author/show/5073330.T_J_Klune?ref=ru_lihp_up_rs_6_mclk-up3098240307">
+                        <img src="../img/goodreads.png" alt="Goodreads">
+                    </a>
+                </div>
             </div>
         </div>
-        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

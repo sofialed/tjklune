@@ -1,0 +1,32 @@
+/* HERO */
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* H1 */
+.hero-text h1{
+    color: #101E11;
+    font-size: 2.1rem;
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+.hero-text p{
+    color: #101E11;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 4px;
+}

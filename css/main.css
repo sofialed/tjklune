@@ -1,0 +1,302 @@
+/* GRID LIBROS PRINCIPALES */
+.image-grid{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+    border-color: gray;
+    border-radius: 0;
+}
+
+/* SEPARADOR ONDULADO */
+.wave-separator {
+    width: 100%;
+    line-height: 0;
+    margin: 1rem 0;
+}
+
+.wave-separator svg {
+    width: 100%;
+    height: 14px;
+    display: block;
+}
+
+/* TITULO PROXIMOS LIBROS */
+.new-release {
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #101E11;
+    letter-spacing: 3px;
+    margin: 2rem 0 0;
+}
+
+/* PROXIMO LIBRO */
+.books-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.new-book-1,
+.new-book-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.book-flip {
+    width: 420px;
+    height: 640px;
+    perspective: 1400px;
+    cursor: pointer;
+}
+
+.book-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1.4s ease;
+}
+
+.book-flip:hover .book-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.book-front,
+.book-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow:
+        -8px 4px 16px rgba(0, 0, 0, 0.5),
+        4px 8px 24px rgba(0, 0, 0, 0.4),
+        1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.book-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.book-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 36px 32px;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.book-back h2 {
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #101E11;
+    line-height: 1.2;
+    align-self: center;
+    text-align: center;
+}
+
+.book-back p {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #101E11;
+    line-height: 1.7;
+}
+
+.book-back .release-date {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.18rem;
+    color: #101E11;
+    margin-top: auto;
+    align-self: center;
+    text-align: center;
+}
+
+.book-back .book-actions {
+    gap: 10px;
+    justify-content: center;
+    align-self: center;
+}
+
+.book-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 5px;
+    padding: 9px;
+}
+
+.btn {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #48A1D9;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #82C0D9;
+}
+
+.btn-secondary {
+    background-color: #678C42;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #718C56;
+}
+
+/* ARTWORK */
+
+.artwork h3 {
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #101E11;
+    letter-spacing: 3px;
+    margin: 2rem 0 1rem;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-left 60s linear infinite;
+    animation-play-state: running;
+}
+
+.artwork:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.carousel-track img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* SEPARADOR ONDULADO */
+.wave-separator {
+    width: 100%;
+    line-height: 0;
+    margin: 1rem 0;
+}
+
+.wave-separator svg {
+    width: 100%;
+    height: 14px;
+    display: block;
+}
+
+/* SOBRE EL AUTOR */
+.about-author {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6%;
+    gap: 2rem;
+}
+
+.about-author h4 {
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #101E11;
+    letter-spacing: 3px;
+}
+
+.about-content {
+    display: flex;
+    align-items: stretch;
+    gap: 48px;
+}
+
+.information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information p {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #101E11;
+    text-align: justify;
+}
+
+.tj {
+    flex: 1.08;
+    display: flex;
+}
+
+.tj img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 1.5px solid #101E11;
+    border-radius: 0;
+}

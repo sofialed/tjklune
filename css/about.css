@@ -1,0 +1,204 @@
+/* ABOUT CONTENT */
+.about-section {
+    padding: 60px 6%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-content {
+    align-items: center;
+}
+
+.about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    text-align: center;
+}
+
+.about p {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #101E11;
+}
+
+.about-content > img {
+    flex: 0 0 650px;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ABOUT AWARDS */
+.about-awards {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.awards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.award-card {
+    flex: 0 0 220px;
+    min-height: 290px;
+    background-image: linear-gradient(
+        rgba(16, 30, 17, 0.75),
+        rgba(72, 161, 217, 0.65)
+    ), url(../img/header.jpg);
+    background-size: auto, 400% 100%;
+    background-position: center, 0% center;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 8px;
+    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.award-card:nth-child(1) { background-position: center, 0% center; }
+.award-card:nth-child(2) { background-position: center, 33% center; }
+.award-card:nth-child(3) { background-position: center, 66% center; }
+.award-card:nth-child(4) { background-position: center, 100% center; }
+
+.award-card p:first-child strong {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.award-card p:last-child {
+    font-family: "Limelight", Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: auto;
+}
+
+/* ABOUT CRITICS */
+.about-critics {
+    padding: 40px 20px;
+}
+
+.about-critics h4 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.critics-track {
+    column-count: 3;
+    column-gap: 16px;
+}
+
+.critics-track > div {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px 24px;
+    border-left: 4px solid #48A1D9;
+}
+
+.critics-track > div p:first-child {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #101E11;
+    flex: 1;
+}
+
+.critics-track > div p:last-child {
+    font-family: "Limelight", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #48A1D9;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+    .about-section {
+        padding: 40px 4%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about {
+        gap: 24px;
+        width: 100%;
+    }
+
+    .about-content > img {
+        flex: none;
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .award-card {
+        flex: 0 0 calc(50% - 12px);
+    }
+
+    .critics-track {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 28px 4%;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+    }
+
+    .about {
+        gap: 16px;
+    }
+
+    .about-content > img {
+        height: auto;
+    }
+
+    .award-card {
+        flex: 0 0 100%;
+    }
+
+    .critics-track {
+        column-count: 1;
+    }
+
+    .critics-track > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .critics-track > div p:last-child {
+        white-space: normal;
+        text-align: left;
+    }
+}
